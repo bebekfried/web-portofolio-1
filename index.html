@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Miracle Isabel | Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-primary": "#ffffff",
+                    "on-primary-fixed": "#350f11",
+                    "on-background": "#1b1c1c",
+                    "on-primary-container": "#6a393a",
+                    "surface-container": "#efeded",
+                    "on-tertiary-fixed-variant": "#204f3b",
+                    "error-container": "#ffdad6",
+                    "surface-bright": "#fbf9f9",
+                    "inverse-on-surface": "#f2f0f0",
+                    "surface-variant": "#e3e2e2",
+                    "surface-container-highest": "#e3e2e2",
+                    "primary-fixed": "#ffdad9",
+                    "on-tertiary-container": "#21503c",
+                    "outline": "#847373",
+                    "on-error-container": "#93000a",
+                    "surface-container-high": "#e9e8e7",
+                    "tertiary-container": "#90c1a7",
+                    "primary-fixed-dim": "#fab5b5",
+                    "primary": "#855050",
+                    "outline-variant": "#d6c2c1",
+                    "surface-container-low": "#f5f3f3",
+                    "surface-container-lowest": "#ffffff",
+                    "primary-container": "#e8a5a5",
+                    "secondary-container": "#e4e2e1",
+                    "on-tertiary-fixed": "#002114",
+                    "background": "#fbf9f9",
+                    "on-primary-fixed-variant": "#6a393a",
+                    "on-surface-variant": "#524343",
+                    "secondary": "#5f5e5e",
+                    "surface-dim": "#dbdad9",
+                    "on-error": "#ffffff",
+                    "on-secondary-container": "#656464",
+                    "secondary-fixed": "#e4e2e1",
+                    "surface-tint": "#855050",
+                    "on-surface": "#1b1c1c",
+                    "on-secondary": "#ffffff",
+                    "tertiary-fixed": "#bbeed2",
+                    "secondary-fixed-dim": "#c8c6c5",
+                    "error": "#ba1a1a",
+                    "on-secondary-fixed-variant": "#474747",
+                    "on-secondary-fixed": "#1b1c1c",
+                    "tertiary-fixed-dim": "#a0d1b7",
+                    "tertiary": "#396752",
+                    "inverse-surface": "#303031",
+                    "on-tertiary": "#ffffff",
+                    "inverse-primary": "#fab5b5",
+                    "surface": "#fbf9f9"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "12px",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "stack-sm": "8px",
+                    "stack-md": "16px",
+                    "container-max": "1280px",
+                    "gutter": "24px",
+                    "stack-lg": "32px",
+                    "section-gap": "120px",
+                    "margin-desktop": "64px",
+                    "margin-mobile": "20px"
+            },
+            "fontFamily": {
+                    "body-md": ["Inter"],
+                    "caption": ["Inter"],
+                    "body-lg": ["Inter"],
+                    "headline-sm": ["Inter"],
+                    "display-lg-mobile": ["Inter"],
+                    "headline-md": ["Inter"],
+                    "label-md": ["Inter"],
+                    "display-lg": ["Inter"]
+            },
+            "fontSize": {
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "caption": ["12px", {"lineHeight": "1.4", "fontWeight": "400"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "headline-sm": ["24px", {"lineHeight": "1.4", "fontWeight": "500"}],
+                    "display-lg-mobile": ["40px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "600"}],
+                    "headline-md": ["32px", {"lineHeight": "1.3", "letterSpacing": "-0.01em", "fontWeight": "500"}],
+                    "label-md": ["14px", {"lineHeight": "1", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                    "display-lg": ["64px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "600"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .soft-shadow {
+            box-shadow: 0 10px 30px -5px rgba(232, 165, 165, 0.15);
+        }
+        .soft-shadow-hover:hover {
+            box-shadow: 0 20px 40px -10px rgba(232, 165, 165, 0.25);
+            transform: translateY(-4px);
+        }
+        .glass-nav {
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+        .active-nav::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background-color: #855050;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md selection:bg-primary-container selection:text-on-primary-container">
+<!-- Top Navigation Bar -->
+<nav class="fixed w-full top-0 z-50 bg-surface/80 glass-nav border-b border-outline-variant/30 shadow-sm transition-all duration-300">
+<div class="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-stack-md max-w-container-max mx-auto">
+<span class="font-headline-sm text-headline-sm font-semibold text-primary">Miracle Isabel</span>
+<div class="hidden md:flex items-center gap-stack-lg">
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors duration-400" href="#pendidikan">Pendidikan</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors duration-400" href="#bisnis">Bisnis</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors duration-400" href="#showcase">Showcase</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors duration-400" href="#kontak">Kontak</a>
+</div>
+<button class="bg-primary text-on-primary px-6 py-2 rounded-full font-label-md text-label-md hover:bg-primary/90 transition-all active:scale-95">
+                Connect
+            </button>
+</div>
+</nav>
+<!-- Hero Section -->
+<header class="relative pt-32 pb-20 md:pt-48 md:pb-32 overflow-hidden">
+<div class="absolute top-0 right-0 -z-10 opacity-20 transform translate-x-1/4 -translate-y-1/4">
+
+</div>
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="max-w-3xl">
+<span class="inline-block bg-primary-container/20 text-primary px-4 py-1.5 rounded-full font-label-md text-label-md mb-stack-lg animate-fade-in">
+                    CEO &amp; Pelajar Teknologi
+                </span>
+<h1 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-on-background mb-stack-md leading-tight">
+                    Miracle Isabel
+                </h1>
+<p class="font-body-lg text-body-lg text-secondary mb-stack-lg max-w-2xl">
+                    CEO Jaringan Restoran Bebek Goreng Internasional &amp; Pelajar SMA yang Bersemangat di Dunia Teknologi. Menyeimbangkan kepemimpinan bisnis global dengan eksplorasi kreatif di dunia digital.
+                </p>
+<div class="flex flex-col sm:flex-row gap-stack-md">
+<a class="inline-flex items-center justify-center bg-primary text-on-primary px-8 py-4 rounded-xl font-label-md text-label-md hover:shadow-lg transition-all group" href="#showcase">
+                        Lihat Hasil Belajar
+                        <span class="material-symbols-outlined ml-2 group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+<a class="inline-flex items-center justify-center border border-primary text-primary px-8 py-4 rounded-xl font-label-md text-label-md hover:bg-primary-container/10 transition-all" href="#kontak">
+                        Mari Terhubung
+                    </a>
+</div>
+</div>
+</div>
+</header>
+<!-- Education Section -->
+<section class="py-section-gap bg-surface-container-low" id="pendidikan">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="flex flex-col md:flex-row justify-between items-end mb-stack-lg gap-stack-md">
+<div class="max-w-xl">
+<h2 class="font-headline-md text-headline-md text-on-background mb-stack-sm">Latar Belakang Pendidikan</h2>
+<p class="font-body-md text-body-md text-secondary">Membangun fondasi akademik yang kuat di institusi terkemuka, menanamkan nilai disiplin dan keunggulan.</p>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-stack-lg">
+<!-- SD -->
+<div class="bg-surface-container-lowest p-stack-lg rounded-xl soft-shadow soft-shadow-hover transition-all">
+<div class="w-12 h-12 bg-primary-container/20 rounded-lg flex items-center justify-center text-primary mb-stack-md">
+<span class="material-symbols-outlined">school</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-background mb-2">SD Marsudirini</h3>
+<p class="text-primary font-label-md text-label-md mb-4">Lulusan Terbaik</p>
+<p class="font-body-md text-body-md text-secondary">Memulai perjalanan akademik dengan fokus pada pengembangan karakter dan kreativitas dasar.</p>
+</div>
+<!-- SMP -->
+<div class="bg-surface-container-lowest p-stack-lg rounded-xl soft-shadow soft-shadow-hover transition-all">
+<div class="w-12 h-12 bg-primary-container/20 rounded-lg flex items-center justify-center text-primary mb-stack-md">
+<span class="material-symbols-outlined">account_balance</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-background mb-2">SMP Stella Duce 1</h3>
+<p class="text-primary font-label-md text-label-md mb-4">Pengembangan Kepemimpinan</p>
+<p class="font-body-md text-body-md text-secondary">Mendalami organisasi dan komunikasi, mempersiapkan diri untuk tantangan yang lebih besar di masa depan.</p>
+</div>
+<!-- SMA -->
+<div class="bg-surface-container-lowest p-stack-lg rounded-xl border-2 border-primary/20 soft-shadow-hover transition-all relative overflow-hidden">
+<div class="absolute top-0 right-0 bg-primary text-on-primary px-4 py-1 text-[10px] font-bold uppercase tracking-widest">Aktif</div>
+<div class="w-12 h-12 bg-primary-container/20 rounded-lg flex items-center justify-center text-primary mb-stack-md">
+<span class="material-symbols-outlined">auto_stories</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-background mb-2">SMA Stella Duce 1</h3>
+<p class="text-primary font-label-md text-label-md mb-4">Fokus Teknologi &amp; Bisnis</p>
+<p class="font-body-md text-body-md text-secondary">Saat ini mengeksplorasi integrasi teknologi dalam manajemen bisnis modern dan pengembangan perangkat lunak.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Business Showcase Section -->
+<section class="py-section-gap" id="bisnis">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+<div class="relative rounded-xl overflow-hidden aspect-[4/5] shadow-2xl">
+<img class="w-full h-full object-cover" data-alt="A sophisticated, high-end photograph of a modern restaurant interior featuring minimalist architectural lines, warm ambient lighting, and subtle pink accents that match the Miracle Isabel brand. The scene exudes professional global leadership, showcasing a bustling yet organized environment of an international restaurant chain. High-quality textures of wood, glass, and polished stone are visible, reflecting a premium corporate aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCufz9lvu9brNcUnLf5gVa1i-_HS4jMn-IKSbaV4uzgGzyts21B_whHesHlx4wdjyJP0L3E3JXvR-um0g9dW6KDAS3mArIg7z3nSxMBYukAaPHURIoSY_aNLaYcw62i3t-53Wp295eymEairoGISSHIhHMs1JJ9lYNd11nxp5HrXB8oAH3feFF_tGBXK5ZH3aoHU1tZsjIACA8ObMe8WdUIUtD8TRT3Kv01pZJsiAQKlLM96Z5jdRX3u-70uVQeg6ODkIvj_wiWjWo"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/60 to-transparent"></div>
+<div class="absolute bottom-stack-lg left-stack-lg right-stack-lg text-on-primary">
+<div class="text-4xl font-bold mb-1">350+</div>
+<div class="font-label-md text-label-md opacity-90">Cabang di Seluruh Dunia</div>
+</div>
+</div>
+<div class="space-y-stack-lg">
+<div>
+<h2 class="font-headline-md text-headline-md text-on-background mb-stack-sm">Kepemimpinan Global</h2>
+<p class="font-body-lg text-body-lg text-secondary">Mengelola jaringan restoran bebek goreng internasional bukan sekadar tentang rasa, melainkan tentang sistem, budaya, dan inovasi berkelanjutan.</p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-stack-md">
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">public</span>
+<div>
+<h4 class="font-label-md text-label-md text-on-background uppercase">Ekspansi Global</h4>
+<p class="text-sm text-secondary">Mengawasi operasi di berbagai benua dengan standar kualitas yang konsisten.</p>
+</div>
+</div>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">group</span>
+<div>
+<h4 class="font-label-md text-label-md text-on-background uppercase">Manajemen SDM</h4>
+<p class="text-sm text-secondary">Memimpin ribuan karyawan dengan pendekatan humanis dan profesional.</p>
+</div>
+</div>
+</div>
+<div class="p-stack-lg bg-surface-container rounded-xl border-l-4 border-primary">
+<p class="italic font-body-md text-body-md text-on-surface-variant mb-4">
+                            "Visi saya adalah membawa cita rasa tradisional ke panggung dunia dengan dukungan efisiensi teknologi modern."
+                        </p>
+<span class="font-label-md text-label-md text-primary">— Miracle Isabel, CEO</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Coding Showcase (Slider) -->
+<section class="py-section-gap bg-surface-bright" id="showcase">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="text-center mb-16">
+<h2 class="font-headline-md text-headline-md text-on-background mb-stack-sm">Learning Journey Showcase</h2>
+<p class="font-body-md text-body-md text-secondary max-w-2xl mx-auto">Eksplorasi teknologi saya dimulai dari nol. Berikut adalah beberapa pencapaian penting dalam perjalanan belajar coding saya.</p>
+</div>
+<!-- Custom Slider Container -->
+<div class="relative group">
+<div class="flex overflow-hidden scroll-smooth snap-x snap-mandatory gap-6 pb-8" id="slider">
+<!-- Slide 1 -->
+<div class="min-w-[85%] md:min-w-[45%] lg:min-w-[30%] snap-center bg-surface-container-lowest rounded-xl overflow-hidden soft-shadow transition-transform hover:scale-[1.02]">
+<div class="h-48 overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="A sleek website landing page mockup for a first coding project. The design is minimalist with soft pastel colors, featuring clean typography and a responsive layout. The visual style is modern, sophisticated, and polished, reflecting a high-quality initial step into web development with professional attention to detail." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD9EeBrcGun4kTWkL_qc_onD0gavStjA5LsNqUZMB-1QExJUJ5PszqyvhmZvwIiP5Wj1sW4d4KXf9PyTFPNC2o3pExx9lwAnTEIc85ThKwfhQVFuN6_fOlSi_Jsn3tjAgbWSaJL5DdJlSw7_fhscNP5hT8KepoFIScrmhaGHXzCftt5GZ9bfloaQXq5cPt-wExQ2rpGaoQi-XJvL7F5Ut6a36DejT4NIZ8vnvZeyP0bIMcDWltOaaDcl0eq1WgpYyvEMJ_ak71uxQE"/>
+</div>
+<div class="p-stack-md">
+<span class="text-[10px] font-bold text-primary uppercase tracking-tighter bg-primary-container/10 px-2 py-1 rounded">Project 01</span>
+<h3 class="font-headline-sm text-headline-sm text-on-background mt-2 mb-1">Landing Page Proyek Pertama</h3>
+<p class="text-sm text-secondary">Eksplorasi awal struktur HTML &amp; CSS dengan fokus pada kebersihan visual.</p>
+</div>
+</div>
+<!-- Slide 2 -->
+<div class="min-w-[85%] md:min-w-[45%] lg:min-w-[30%] snap-center bg-surface-container-lowest rounded-xl overflow-hidden soft-shadow transition-transform hover:scale-[1.02]">
+<div class="h-48 overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="An interactive digital menu card UI design for a high-end restaurant. It features elegant hover states, beautiful food photography, and a soft pink-and-white color palette. The interface is intuitive and user-friendly, demonstrating proficiency in CSS animations and user experience design for a business context." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBgrRiYNx4R6nIjCdl-v87vqf1zRE80f4c2DdKP4MOWOCRGjmIN2XsdvdoCDZhqx07kY6wsqbDEhqcvYXwsbwEgBQUWC9-iIemG-LPH8SPuy37H1h5nI8P3LSbwkC1jGIzzkEWtsq9-cgpGZwoZZ4Pm-MesmCmD9H6tla14ovvPhnkNmAJgDmt_OHV1R3xfnToIzISCGI742NHQRgj0Qah52l7s1tfVVH-LXZUs9ddBQMCub9N_v2UL2PxXWQVCp0hBDBOx3adMHNQ"/>
+</div>
+<div class="p-stack-md">
+<span class="text-[10px] font-bold text-primary uppercase tracking-tighter bg-primary-container/10 px-2 py-1 rounded">Project 02</span>
+<h3 class="font-headline-sm text-headline-sm text-on-background mt-2 mb-1">Kartu Menu Interaktif</h3>
+<p class="text-sm text-secondary">Implementasi interaksi pengguna yang halus untuk pengalaman kuliner digital.</p>
+</div>
+</div>
+<!-- Slide 3 -->
+<div class="min-w-[85%] md:min-w-[45%] lg:min-w-[30%] snap-center bg-surface-container-lowest rounded-xl overflow-hidden soft-shadow transition-transform hover:scale-[1.02]">
+<div class="h-48 overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="A sophisticated user profile customization dashboard UI. It shows various settings, toggles, and personalization options in a clean, grid-based layout. The aesthetic uses soft shadows and the brand's signature pink accents to create a calm, professional atmosphere for managing digital identities." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCmdaJesUxZcMltASvFBl_3RGYR9HeL268IM1VhhYo1uL3p0nE470vTpJYJe6n_ECksciHs83htuuAA9d-yJGZlwMSPW9F_Jc-fa4UKLcpHyyy74-awd1or17Ptlc1eHH8gsoPlK7B8ua59biIm5tQlB_Ej82OsR7tK-s8gObd-JMzyHOCn7_HAe3w5k77kkPOB84eVjiwlU2daVG4VCwd7e_sS1jtn7207t2Er76jhjSQiK1BwtZ1mSg7kvPqEwYHuXoJkIMFbR3Q"/>
+</div>
+<div class="p-stack-md">
+<span class="text-[10px] font-bold text-primary uppercase tracking-tighter bg-primary-container/10 px-2 py-1 rounded">Project 03</span>
+<h3 class="font-headline-sm text-headline-sm text-on-background mt-2 mb-1">Kustomisasi Profil</h3>
+<p class="text-sm text-secondary">Sistem dashboard yang memungkinkan personalisasi mendalam bagi pengguna.</p>
+</div>
+</div>
+</div>
+<!-- Navigation Dots -->
+<div class="flex justify-center gap-2 mt-stack-lg">
+<div class="w-2 h-2 rounded-full bg-primary"></div>
+<div class="w-2 h-2 rounded-full bg-primary/30"></div>
+<div class="w-2 h-2 rounded-full bg-primary/30"></div>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact Section -->
+<section class="py-section-gap" id="kontak">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="bg-primary-container/10 rounded-3xl p-stack-lg md:p-16 flex flex-col items-center text-center">
+<h2 class="font-display-lg-mobile md:font-headline-md text-display-lg-mobile md:text-headline-md text-on-background mb-stack-md">Siap Membangun Sesuatu yang Luar Biasa?</h2>
+<p class="font-body-lg text-body-lg text-secondary max-w-xl mb-stack-lg">
+                    Apakah Anda tertarik untuk berkolaborasi dalam bisnis, teknologi, atau sekadar bertukar pikiran? Saya selalu terbuka untuk diskusi yang bermakna.
+                </p>
+<div class="flex flex-wrap justify-center gap-4">
+<a class="flex items-center gap-2 bg-primary text-on-primary px-8 py-4 rounded-xl font-label-md text-label-md hover:shadow-xl transition-all" href="mailto:contact@miracleisabel.com">
+<span class="material-symbols-outlined">mail</span>
+                        Kirim Email
+                    </a>
+<div class="flex gap-4">
+<a class="w-14 h-14 rounded-xl border border-outline-variant flex items-center justify-center text-primary hover:bg-white transition-all" href="#">
+<svg class="w-6 h-6 fill-current" viewbox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.761 0 5-2.239 5-5v-14c0-2.761-2.239-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"></path></svg>
+</a>
+<a class="w-14 h-14 rounded-xl border border-outline-variant flex items-center justify-center text-primary hover:bg-white transition-all" href="#">
+<svg class="w-6 h-6 fill-current" viewbox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"></path></svg>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="w-full pt-section-gap pb-stack-lg bg-surface-container-lowest border-t border-outline-variant/50">
+<div class="flex flex-col md:flex-row justify-between items-center px-margin-mobile md:px-margin-desktop gap-stack-md max-w-container-max mx-auto">
+<span class="font-headline-sm text-headline-sm text-primary">Miracle Isabel</span>
+<p class="font-body-md text-body-md text-secondary order-3 md:order-2">
+                © 2024 Miracle Isabel. Built with quiet confidence.
+            </p>
+<div class="flex gap-stack-md order-2 md:order-3">
+<a class="font-body-md text-body-md text-secondary hover:text-primary transition-all opacity-80 hover:opacity-100" href="#">LinkedIn</a>
+<a class="font-body-md text-body-md text-secondary hover:text-primary transition-all opacity-80 hover:opacity-100" href="#">GitHub</a>
+<a class="font-body-md text-body-md text-secondary hover:text-primary transition-all opacity-80 hover:opacity-100" href="#">Instagram</a>
+</div>
+</div>
+</footer>
+<script>
+        // Simple scroll reveal interaction
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 20) {
+                nav.classList.add('py-stack-sm', 'shadow-md');
+                nav.classList.remove('py-stack-md', 'shadow-sm');
+            } else {
+                nav.classList.add('py-stack-md', 'shadow-sm');
+                nav.classList.remove('py-stack-sm', 'shadow-md');
+            }
+        });
+
+        // Intersection Observer for highlighting active nav links
+        const observerOptions = {
+            threshold: 0.5
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const id = entry.target.getAttribute('id');
+                    document.querySelectorAll('nav a').forEach(link => {
+                        link.classList.remove('active-nav', 'text-primary');
+                        link.classList.add('text-on-surface-variant');
+                        if (link.getAttribute('href') === `#${id}`) {
+                            link.classList.add('active-nav', 'text-primary');
+                            link.classList.remove('text-on-surface-variant');
+                        }
+                    });
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('section').forEach(section => observer.observe(section));
+    </script>
+</body></html>
